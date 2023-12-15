@@ -1,2 +1,2 @@
 .DS_Store
-./examples/lenet/data
+examples/lenet/data/*
