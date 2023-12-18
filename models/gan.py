@@ -31,7 +31,7 @@ class Generator(nn.Module):
     
     def forward(self, x):
         return self.gen(x)
-    
+
 
 
 class Discriminator(nn.Module):
