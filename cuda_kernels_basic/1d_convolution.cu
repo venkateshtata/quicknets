@@ -27,17 +27,17 @@ int main(){
 
     int n = 1 << 20;
 
-    int bytes_n = n * size_of(int);
+    int bytes_n = n * sizeof(int);
 
     int m = 7;
 
-    int bytes_m = m * size_of(int);
+    int bytes_m = m * sizeof(int);
 
-    int vector<int> h_array(n);
-    int generate(begin(h_array), end(h_array), [](){ return rand()%100;});
+    std::vector<int> h_array(n);
+    std::generate(begin(h_array), end(h_array), [](){ return rand()%100;});
 
-    int vector<int> h_mask(n);
-    int generate(begin(h_mask), end(h_mask), [](){ return rand()%100;});
+    std::vector<int> h_mask(n);
+    std::generate(begin(h_mask), end(h_mask), [](){ return rand()%100;});
 
     std::vector<int> h_result(n);
 
