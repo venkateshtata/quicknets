@@ -1,2 +1,4 @@
 .DS_Store
 datasets/
+experiments/notebooks/distilbert-base-uncased-finetuned-emotion/
+experiments/notebooks/wandb/
